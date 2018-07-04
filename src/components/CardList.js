@@ -1,11 +1,10 @@
 import React from 'react'
 import Card from './Card'
 import './CardList.css'
-import {robots} from '../data'
-console.log(robots)
-const CardList = () => {
-	let robotsList = robots.map(user => {
-		return <Card key={user.id} name={user.name} email={user.email} id={user.id}/>
+
+const CardList = ({robots}) => {
+	let robotsList = robots.map(robot => {
+		return <Card key={robot.id} name={robot.name} email={robot.email} id={robot.id}/>
 	})
 	return (
 		<div className="row card-list">
