@@ -9,8 +9,8 @@ class Card extends Component {
 				<div className="card rounded my-3 text-center">
 					<img className="card-img-top" src={`https://robohash.org/${this.props.id}`} alt="robots"/>
 					<div className="card-body">
-						<h3>{this.props.name}</h3>
-						<p>{this.props.email}</p>
+						<h3 className="text-white">{this.props.name}</h3>
+						<p className="text-white">{this.props.email}</p>
 					</div>				
 				</div>
 			</div>			
