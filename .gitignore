@@ -12,6 +12,9 @@
 #vs code
 /.vs
 
+#zip file
+*.zip
+
 # misc
 .DS_Store
 .env.local
